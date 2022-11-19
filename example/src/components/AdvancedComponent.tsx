@@ -5,48 +5,13 @@ import { useState } from 'react'
 
 const AdvancedComponent = () => {
   const [data] = useState([
-    {
-      userId: '01a',
-      comId: '012',
-      fullName: 'Riya Negi',
-      avatarUrl: 'https://ui-avatars.com/api/name=Riya&background=random',
-      userProfile: 'https://www.linkedin.com/in/riya-negi-8879631a9/',
-      text: `<p>Hey <strong>loved</strong> your blog! Can you show me some other ways to <del><em>fix</em></del>  solve this?🤔<br>Here's my <a href="https://www.linkedin.com/in/riya-negi-8879631a9/" target="_blank">Linkedin Profile</a> to reach out.</p>`,
-      replies: [
-        {
-          userId: '02a',
-          comId: '013',
-          userProfile: 'https://www.linkedin.com/in/riya-negi-8879631a9/',
-          fullName: 'Adam Scott',
-          avatarUrl: 'https://ui-avatars.com/api/name=Adam&background=random',
-          text: `<p>Yeah sure try adding this line to your code. You need to pass <span style="color: rgb(147,101,184);">event</span><span style="color: rgb(26,188,156);"> </span><span style="color: rgb(0,0,0);">as a param. </span></p>
-          <pre>event.preventDefault()</pre>
-          <p>Best of luck with your project! <br></p>
-          <img src="https://c.tenor.com/4cR1jMpsrEgAAAAC/snoopy-cheerleader.gif" alt="undefined" style="height: auto;width: auto"/>
-          <p></p>`
-        },
-        {
-          userId: '01a',
-          comId: '014',
-          userProfile: 'https://www.linkedin.com/in/riya-negi-8879631a9/',
-          fullName: 'Riya Negi',
-          avatarUrl: 'https://ui-avatars.com/api/name=Riya&background=random',
-          text: '<p><strong>OMG!</strong> it worked! <span style="color: rgb(209,72,65);">DO NOT stop this blog series!!!!</span> 💃</p>'
-        }
-      ]
-    },
+
     {
       userId: '02b',
       comId: '017',
       fullName: 'Lily',
       userProfile: 'https://www.linkedin.com/in/riya-negi-8879631a9/',
-      text: `<blockquote><strong>DRY </strong>- is the right of passage to good coding</blockquote>
-      <p>True story brother!! <em>Amen to that!  </em>For anyone wondering DRY is&nbsp;</p>
-      <ol>
-      <li>Don't</li>
-      <li>Repeat</li>
-      <li>Yoursef</li>
-      </ol>`,
+      text: `<p>True story brother!! <em>Amen to that!  </em>For anyone wondering DRY is&nbsp;</p>`,
       avatarUrl: 'https://ui-avatars.com/api/name=Lily&background=random',
       replies: []
     }
@@ -54,14 +19,7 @@ const AdvancedComponent = () => {
 
   return (
     <div style={{ width: '100%' }}>
-      <a
-        style={{ color: 'black', cursor: 'pointer' }}
-        target='_blank'
-        rel='noopener noreferrer'
-        href='https://github.com/RiyaNegi/react-comments-section/blob/main/example/src/components/AdvancedComponent.tsx'
-      >
-        <span className='title'>Advanced Input Component</span>
-      </a>
+
       <CommentSection
         currentUser={{
           currentUserId: '01a',

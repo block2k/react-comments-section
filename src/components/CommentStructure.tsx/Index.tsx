@@ -120,7 +120,7 @@ const CommentStructure = ({
                   onClick={() => globalStore.handleAction(info.comId, false)}
                 >
                   <div className='replyIcon' />
-                  <span style={{ marginLeft: 17 }}>Reply</span>
+                  <span style={{ marginLeft: 17 }}>Trả lời</span>
                 </button>
               </div>
             )}
@@ -171,10 +171,10 @@ const CommentStructure = ({
       {editMode
         ? actionModeSection('edit')
         : replyMode
-        ? actionModeSection('reply')
-        : globalStore.replyTop
-        ? replyTopSection()
-        : replyBottomSection()}
+          ? actionModeSection('reply')
+          : globalStore.replyTop
+            ? replyTopSection()
+            : replyBottomSection()}
     </div>
   )
 }
